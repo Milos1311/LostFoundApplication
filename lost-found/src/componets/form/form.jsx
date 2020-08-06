@@ -6,6 +6,10 @@ import Button from 'react-bootstrap/Button';
 
 import { ButtonE } from './form.styles';
 
+import {reduxForm} from 'redux-form';
+import{ connect } from 'react-redux';
+import {createItem} from '../../actions';;
+
 class FormItem extends React.Component {
 
     constructor(props) {
@@ -85,4 +89,10 @@ class FormItem extends React.Component {
 }
 
 
-export default FormItem;
+const formWrapped =  reduxForm ({
+  form: 'itemF'
+})(FormItem);
+
+
+ 
+export default connect(null, {createItem})(formWrapped);
