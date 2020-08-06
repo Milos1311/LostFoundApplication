@@ -1,20 +1,24 @@
 import React from 'react';
-//import { ButtonModal } from './modal.styles';
+
+
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import FormEx from '../form/form.jsx';
 
+import { ButtonModal } from './modal.styles';
+
+
+
 
 const ModalEx = () => {
   
-
      const [lgShow, setLgShow] = React.useState(false);
 
   
     return (
       <>
-
-       <Button onClick={() => setLgShow(true)}>ADD</Button>  
+        <ButtonModal>
+       <Button   onClick={() => setLgShow(true)}>ADD</Button></ButtonModal>
 
         <Modal
         size="lg"
