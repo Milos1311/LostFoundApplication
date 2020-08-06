@@ -10,7 +10,7 @@ function App() {
   return (
     
     <div className="App">
-      s <GlobalStyle/>
+       <GlobalStyle/>
       <Header></Header>
     </div>
   );
