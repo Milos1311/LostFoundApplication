@@ -4,7 +4,14 @@ import Card from 'react-bootstrap/Card';
 import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+import{ connect } from 'react-redux';
+import { fetchFound } from '../actions';
+
 class Found extends React.Component {
+
+//   componentDidMount() {
+//     this.props.fetchFound();
+// }
 
   render() {
     return (
@@ -14,7 +21,7 @@ class Found extends React.Component {
                <Card.Body>
                <Card.Title>Found</Card.Title>
             <Card.Text>
-      Some quick example text to build on the card title and make up.
+            Ovde ide nesto
       </Card.Text>
      </Card.Body>
      <ListGroup className="list-group-flush">
@@ -32,4 +39,11 @@ class Found extends React.Component {
 
 }
 
-export default Found ;
+const mapStateToProps = (state) => {
+  return {found:state.found};
+};
+
+
+
+
+export default connect(mapStateToProps , {fetchFound})(Found);
