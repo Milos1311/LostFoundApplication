@@ -11,9 +11,9 @@ import { fetchFound } from '../actions';
 
 class Found extends React.Component {
 
-//   componentDidMount() {
-//     this.props.fetchFound();
-// }
+  componentDidMount() {
+    this.props.fetchFound();
+}
 
   render() {
     return (

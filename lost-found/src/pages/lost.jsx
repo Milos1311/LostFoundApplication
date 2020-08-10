@@ -9,9 +9,9 @@ import { fetchLost } from '../actions';
 
 class Lost extends React.Component {
 
-  //   componentDidMount() {
-//     this.props.fetchLost();
-// }
+    componentDidMount() {
+    this.props.fetchLost();
+}
 
 
   render() {
