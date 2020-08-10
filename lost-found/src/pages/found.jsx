@@ -7,6 +7,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import{ connect } from 'react-redux';
 import { fetchFound } from '../actions';
 
+
+
 class Found extends React.Component {
 
 //   componentDidMount() {
@@ -16,6 +18,8 @@ class Found extends React.Component {
   render() {
     return (
         <div>
+
+
           <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
                <Card.Body>
