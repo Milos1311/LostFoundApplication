@@ -4,7 +4,15 @@ import Card from 'react-bootstrap/Card';
 import ListGroupItem from 'react-bootstrap/ListGroupItem';
 import ListGroup from 'react-bootstrap/ListGroup';
 
+import{ connect } from 'react-redux';
+import { fetchLost } from '../actions';
+
 class Lost extends React.Component {
+
+  //   componentDidMount() {
+//     this.props.fetchLost();
+// }
+
 
   render() {
     return (
@@ -32,4 +40,11 @@ class Lost extends React.Component {
 
 }
 
-export default Lost ;
+const mapStateToProps = (state) => {
+  return {lost:state.lost};
+};
+
+
+
+
+export default connect(mapStateToProps , {fetchLost})(Lost);
