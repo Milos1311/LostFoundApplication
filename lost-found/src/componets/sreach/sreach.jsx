@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { SreachStyled } from './search.styles';
+
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
@@ -17,7 +19,7 @@ class Search extends React.Component {
          aria-describedby="basic-addon2"
     />
     <InputGroup.Append>
-      <Button variant="contained">Search</Button>
+      <Button>Search</Button>
     </InputGroup.Append>
   </InputGroup>
   </SreachStyled>

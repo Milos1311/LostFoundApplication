@@ -28,9 +28,9 @@ class Menu extends React.Component {
     
      <Link  to="/abouteAs"  ><AboutAs>About as</AboutAs></Link>
     
-    <Link  to='/lost'><Lost>lost</Lost></Link> 
+    <Link  to='/lost'><Lost>Lost</Lost></Link> 
 
-    <Link  to='/found'><Found>found</Found></Link>
+    <Link  to='/found'><Found>Found</Found></Link>
    
 
         <Switch>
