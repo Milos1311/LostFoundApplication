@@ -5,8 +5,8 @@ export const ButtonModal  = styled.div`
 position: absolute;
 width: 204px;
 height: 62px;
-left: 803px;
-top: 190px; 
+left: 880px;
+top: 200px; 
 
 
 

@@ -8,10 +8,6 @@ body {
     white-space: nowrap;
     padding: 10px;
 
-
-
-
-   
   }
 
 
