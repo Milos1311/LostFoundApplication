@@ -4,6 +4,8 @@ import { Lost } from './menu.styles';
 import { Text } from './menu.styles';
 import { Found } from './menu.styles';
 import {AboutAs } from './menu.styles';
+import {Registration } from './menu.styles';
+
 import {Card } from './menu.styles';
 
 import {ModalStyled } from '../modal/modal.styles';
@@ -14,6 +16,8 @@ import { BrowserRouter as Router ,Route ,Link ,Switch } from 'react-router-dom';
 import Lost1 from '../../pages/lost';
 import Found1 from '../../pages/found';
 import AbouteAs from '../../pages/abouteAs';
+
+import Registation from '../../auth/registration';
 
 
 class Menu extends React.Component {
@@ -32,6 +36,8 @@ class Menu extends React.Component {
     <Link  to='/lost'><Lost>Lost</Lost></Link> 
 
     <Link  to='/found'><Found>Found</Found></Link>
+
+    <Link  to='/registration'><Registration>Registration</Registration></Link>
    
 
         <Switch>
@@ -51,6 +57,12 @@ class Menu extends React.Component {
           <Route path="/found">
 
           <Card><Found1 /></Card> 
+
+          </Route>
+
+          <Route path="/registration">
+
+          <Card><Registation/></Card> 
 
           </Route>
 

@@ -5,13 +5,10 @@ import Card from 'react-bootstrap/Card';
 import Sreach from '../componets/sreach/sreach';
 
 import{ connect } from 'react-redux';
-import { fetchLost } from '../actions';
+import {getLost}  from '../actions';
 
 class Lost extends React.Component {
 
-//     componentDidMount() {
-//     this.props.fetchLost();
-// }
 
 
   render() {
@@ -52,4 +49,4 @@ const mapStateToProps = (state) => {
 
 
 
-export default connect(mapStateToProps , {fetchLost})(Lost);
+export default connect(mapStateToProps , {getLost})(Lost);
