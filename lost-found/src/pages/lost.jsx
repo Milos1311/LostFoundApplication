@@ -9,7 +9,9 @@ import {getLost}  from '../actions';
 
 class Lost extends React.Component {
 
-
+  //  componentDidMount(){
+  //    this.props.getLost();
+  //  }
 
   render() {
     return (

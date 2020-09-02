@@ -1,48 +1,49 @@
 import React from 'react';
 
-import Card from 'react-bootstrap/Card';
 
 import{ connect } from 'react-redux';
-import { getFound } from '../actions';
 
-import { FoundCard } from './found.styles';
+import Card from 'react-bootstrap/Card';
 
 import Sreach from '../componets/sreach/sreach';
 
+import { getFound } from '../actions'; 
+
 class Found extends React.Component {
 
-  
+
+
+  componentDidMount(){
+    this.props.getFound();
+    
+  }
 
 renderList(props){
   return props.map( itemFound => {
     return (
-      <div className="item" key={itemFound.idItem}>
-      <div>
-  <div>
-  <FoundCard>
-          <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-               <Card.Body>
-               <Card.Title>Found</Card.Title>
-            <Card.Text>
-            Grad 
-      </Card.Text>
 
-      <Card.Text>
-            Predmet
-      </Card.Text>
 
-     </Card.Body>
+      
+      <div className="col" key={itemFound.id}>
+      <div className="row">
+    
+      <div className="col">
+      <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180" />
   <Card.Body>
-    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the bulk of
+      the card's content.
+    </Card.Text>
   </Card.Body>
 </Card>
-</FoundCard>
-  </div>
-</div>
 
-  </div>
 
+
+    </div>
+     </div>
+      </div>
 
       );
     });
@@ -52,7 +53,7 @@ renderList(props){
   render() {
     return (
         <div>
-          {this.renderList(this.props.found)}
+         {this.renderList(this.props.found)} 
           <Sreach></Sreach>
 
          
@@ -65,9 +66,8 @@ renderList(props){
 }
 
 const mapStateToProps = (state) => {
-  return {found:state.found};
+  return {found: state.found};
 };
-
 
 
 
